@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IPTV频道列表</title>
+        <!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <style>
+        *{
+        	margin:0px;
+        	padding:0px;
+        }
+    	.content{
+    		-webkit-overflow-scrolling: touch;
+    		margin-top:10px;
+    	}
+    	header{
+    		/*position:fixed;*/
+    		top:0px;
+    		width: 100%;
+    	}
+    	.toptitle{
+    		/*height:50px;
+    		line-height:50px;
+    		text-align:center;
+    		background:rgb(10,40,120);
+    		color:#fff;*/
+    		/*background-image: url('img/banner.jpg'); */
+    		width: 100%;
+    	}
+    	.content .label{
+    		line-height:40px;
+    		padding-left:20px;
+    		border-left:2px solid #fe0000;
+    		/*background-color: #fe0000;*/
+    		font-size: 20px;
+    		font-weight: bold;
+    		margin-bottom: 10px;
+    	}
+
+    	.ad{
+    		display:flex;
+    		flex-direction:row;
+    		flex-wrap:wrap;
+    		justify-content:flex-start;
+    	}
+    	.ad > div{
+    		width: 26%;
+    		text-align:center;
+    		margin-left: 5.5%; 
+    	}
+    	.ad >div img{
+    		width : 100%;
+    	}
+    	.ad >div a{
+    		line-height : 30px;
+    		text-decoration: none;
+    	}
+    	.weishi img{
+    		border: 1px solid #333;
+    	}
+        </style>
+    </head>
+    <body>
+    	<header>
+    		<img class="toptitle" src="img/banner.jpg">
+    	</header>
+		<div class="content">
+		   	<div class="label">高清列表</div>
+		   	<div class="ad">
+		   		<div>
+		   			<img src="img/CCTV-1.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv1hd.m3u8">CCTV-1</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-3.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv3hd.m3u8">CCTV-3</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-5.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv5hd.m3u8">CCTV-5</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-5+.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv5phd.m3u8">CCTV-5+</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-6.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv6hd.m3u8">CCTV-6</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-8.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv8hd.m3u8">CCTV-8</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-beijing.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv1hd.m3u8">北京卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-wenyi.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv2hd.m3u8">北京文艺</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-tiyu.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv6hd.m3u8">北京体育</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-jishi.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv11hd.m3u8">北京纪实</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CHC.jpg" />
+		   			<a href="http://tv.ejia.net/hls/chchd.m3u8">CHC</a>
+		   		</div>
+		   	</div></br>
+		   	
+		   	<div class="ad weishi">
+		   		<div>
+		   			<img src="img/hunan.jpg" />
+		   			<a href="http://tv.ejia.net/hls/hunanhd.m3u8">湖南卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/zhejiang.jpg" />
+		   			<a href="http://tv.ejia.net/hls/zjhd.m3u8">浙江卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/jiangsu.jpg" />
+		   			<a href="http://tv.ejia.net/hls/jshd.m3u8">江苏卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/dongfang.jpg" />
+		   			<a href="http://tv.ejia.net/hls/dfhd.m3u8">东方卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/anhui.jpg" />
+		   			<a href="http://tv.ejia.net/hls/ahhd.m3u8">安徽卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/heilongjiang.jpg" />
+		   			<a href="http://tv.ejia.net/hls/hljhd.m3u8">黑龙江卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/liaoning.jpg" />
+		   			<a href="http://tv.ejia.net/hls/lnhd.m3u8">辽宁卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/shenzhen.jpg" />
+		   			<a href="http://tv.ejia.net/hls/szhd.m3u8">深圳卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/guanghzou.jpg" />
+		   			<a href="http://tv.ejia.net/hls/gdhd.m3u8">广州卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/tianjin.jpg" />
+		   			<a href="http://tv.ejia.net/hls/tjhd.m3u8">天津卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/hubei.jpg" />
+		   			<a href="http://tv.ejia.net/hls/hbhd.m3u8">湖北卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/shandong.jpg" />
+		   			<a href="http://tv.ejia.net/hls/sdhd.m3u8">山东卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/chongqing.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cqhd.m3u8">重庆卫视</a>
+		   		</div>
+		   	</div></br>
+
+		   	<div class="label">标清列表</div>
+		   	<div class="ad">
+		   		<div>
+		   			<img src="img/CCTV-1.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv1.m3u8">CCTV-1综合</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-2.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv2.m3u8">CCTV-2财经</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-3.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv3.m3u8">CCTV-3综艺</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-4.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv4.m3u8">CCTV-4中文国际</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-5.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv5.m3u8">CCTV-5体育</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-6.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv6.m3u8">CCTV-6电影</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-7.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv7.m3u8">CCTV-7军事农业</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-8.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv8.m3u8">CCTV-8电视剧</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-9.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv9.m3u8">CCTV-9纪录</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-10.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv10.m3u8">CCTV-10科教</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-11.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv11.m3u8">CCTV-11戏曲</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-12.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv12.m3u8">CCTV-12社会与法</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-13.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv13.m3u8">CCTV-13新闻</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-14.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv14.m3u8">CCTV-14少儿</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-15.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv15.m3u8">CCTV-15音乐</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/CCTV-16.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cctv16.m3u8">CCTV-NEWS</a>
+		   		</div>
+		   	</div>
+		   	
+		   	<div class="ad">
+		   		<div>
+		   			<img src="img/btv-beijing.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv1.m3u8">北京卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-wenyi.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv2.m3u8">北京文艺</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-kejiao.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv3.m3u8">北京科教</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-yingshi.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv4.m3u8">北京影视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-caijing.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv5.m3u8">北京财经</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-tiyu.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv6.m3u8">北京体育</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-shenghuo.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv7.m3u8">北京生活</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-qingnian.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv8.m3u8">北京青年</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-xinwen.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv9.m3u8">北京新闻</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/btv-kakushaoer.jpg" />
+		   			<a href="http://tv.ejia.net/hls/btv10.m3u8">北京卡酷少儿</a>
+		   		</div>
+		   	</div>
+
+			<div class="ad weishi">
+				<div>
+		   			<img src="img/shenzhen.jpg" />
+		   			<a href="http://tv.ejia.net/hls/sztv.m3u8">深圳卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/anhui.jpg" />
+		   			<a href="http://tv.ejia.net/hls/ahtv.m3u8">安徽卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/henan.jpg" />
+		   			<a href="http://tv.ejia.net/hls/hntv.m3u8">河南卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/shanxi-1.jpg" />
+		   			<a href="http://tv.ejia.net/hls/sxtv.m3u8">陕西卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/jilin.jpg" />
+		   			<a href="http://tv.ejia.net/hls/jltv.m3u8">吉林卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/guanghzou.jpg" />
+		   			<a href="http://tv.ejia.net/hls/gdtv.m3u8">广东卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/shandong.jpg" />
+		   			<a href="http://tv.ejia.net/hls/sdtv.m3u8">山东卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/hubei.jpg" />
+		   			<a href="http://tv.ejia.net/hls/hbtv.m3u8">湖北卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/guangxi.jpg" />
+		   			<a href="http://tv.ejia.net/hls/gxtv.m3u8">广西卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/hebei.jpg" />
+		   			<a href="http://tv.ejia.net/hls/hebtv.m3u8">河北卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/xizang.jpg" />
+		   			<a href="http://tv.ejia.net/hls/xztv.m3u8">西藏卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/neimenggu.jpg" />
+		   			<a href="http://tv.ejia.net/hls/nmtv.m3u8">内蒙古卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/qinghai.jpg" />
+		   			<a href="http://tv.ejia.net/hls/qhtv.m3u8">青海卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/sichuan.jpg" />
+		   			<a href="http://tv.ejia.net/hls/sctv.m3u8">四川卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/jiangsu.jpg" />
+		   			<a href="http://tv.ejia.net/hls/jstv.m3u8">江苏卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/tianjin.jpg" />
+		   			<a href="http://tv.ejia.net/hls/tjtv.m3u8">天津卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/shanxi.jpg" />
+		   			<a href="http://tv.ejia.net/hls/sxrtv.m3u8">山西卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/liaoning.jpg" />
+		   			<a href="http://tv.ejia.net/hls/lntv.m3u8">辽宁卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/xiamen.jpg" />
+		   			<a href="http://tv.ejia.net/hls/xmtv.m3u8">厦门卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/xinjiang.jpg" />
+		   			<a href="http://tv.ejia.net/hls/xjtv.m3u8">新疆卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/dongfang.jpg" />
+		   			<a href="http://tv.ejia.net/hls/dftv.m3u8">东方卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/heilongjiang.jpg" />
+		   			<a href="http://tv.ejia.net/hls/hljtv.m3u8">黑龙江卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/henan.jpg" />
+		   			<a href="http://tv.ejia.net/hls/hunantv.m3u8">湖南卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/yunnan.jpg" />
+		   			<a href="http://tv.ejia.net/hls/yntv.m3u8">云南卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/jiangxi.jpg" />
+		   			<a href="http://tv.ejia.net/hls/jxtv.m3u8">江西卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/zhejiang.jpg" />
+		   			<a href="http://tv.ejia.net/hls/zjtv.m3u8">浙江卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/fujiandongnan.jpg" />
+		   			<a href="http://tv.ejia.net/hls/dntv.m3u8">东南卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/guizhou.jpg" />
+		   			<a href="http://tv.ejia.net/hls/gztv.m3u8">贵州卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/ningxia.jpg" />
+		   			<a href="http://tv.ejia.net/hls/nxtv.m3u8">宁夏卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/gansu.jpg" />
+		   			<a href="http://tv.ejia.net/hls/gstv.m3u8">甘肃卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/chongqing.jpg" />
+		   			<a href="http://tv.ejia.net/hls/cqtv.m3u8">重庆卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/bingtuan.jpg" />
+		   			<a href="http://tv.ejia.net/hls/bttv.m3u8">兵团卫视</a>
+		   		</div>
+		   		<div>
+		   			<img src="img/lvyou.jpg" />
+		   			<a href="http://tv.ejia.net/hls/lytv.m3u8">旅游卫视</a>
+		   		</div>
+		   		
+			</div>
+		</div>
+    </body>
+    <script type="text/javascript">
+	</script>
+</html>   
